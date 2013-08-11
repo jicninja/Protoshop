@@ -63,62 +63,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 1, ../sass/modules/_global.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 7, ../sass/modules/_global.scss */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* line 15, ../sass/modules/_global.scss */
+body {
+  background-image: url("../images/grid.png");
+}
+
 /* line 2, ../sass/modules/_sider.scss */
 .proto-main-wrapper {
-  display: block;
-  float: left;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-/* line 8, ../sass/modules/_sider.scss */
+/* line 7, ../sass/modules/_sider.scss */
 .proto-sidder {
-  background: #005b9f;
+  background: #1f1f20;
   color: white;
-  float: left;
   height: 100%;
-  padding: 0px 20px 0px 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 250px;
+  position: absolute;
+  -webkit-box-shadow: #121213 0 0 15px;
+  -moz-box-shadow: #121213 0 0 15px;
+  box-shadow: #121213 0 0 15px;
 }
-
-/* line 17, ../sass/modules/_sider.scss */
-.proto-sidder-content {
+/* line 16, ../sass/modules/_sider.scss */
+.proto-sidder .proto-sidder-content {
   padding-top: 10px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 30px;
 }
-
-/* line 21, ../sass/modules/_sider.scss */
-.proto-logo {
+/* line 22, ../sass/modules/_sider.scss */
+.proto-sidder .proto-sidder-content header {
+  margin-bottom: 20px;
+}
+/* line 23, ../sass/modules/_sider.scss */
+.proto-sidder .proto-sidder-content header h1 {
   padding-bottom: 10px;
+  color: #56dbbb;
+  font-size: 35px;
+  font-weight: 200;
 }
-
-/* line 25, ../sass/modules/_sider.scss */
-.proto-line {
-  margin-bottom: 10px;
-}
-
 /* line 29, ../sass/modules/_sider.scss */
-.proto-main-content {
-  margin-left: 50%;
-  margin-top: 20px;
+.proto-sidder .proto-sidder-content header hr {
+  border-width: 1px 0px 0px 0px;
+  border-top-color: #606d80;
+}
+/* line 37, ../sass/modules/_sider.scss */
+.proto-sidder footer {
+  margin-top: -30px;
+  height: 30px;
+  width: 100%;
+  background: #606d80;
+}
+
+/* line 1, ../sass/modules/_content.scss */
+.proto-main-wrapper {
+  padding: 20px 20px 20px 270px;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 6, ../sass/modules/_content.scss */
+.proto-main-wrapper .proto-main-content {
+  margin-top: 0px;
   background: rgba(255, 255, 255, 0.5);
   border-style: solid;
   border-color: #005b9f;
   border-width: 1px;
   width: 500px;
   height: 500px;
-}
-
-/* line 1, ../sass/modules/_global.scss */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 6, ../sass/modules/_global.scss */
-html, body {
-  min-width: 100%;
-  min-height: 100%;
-  font-family: helvetica, arial, sans-serif;
-}
-
-/* line 12, ../sass/modules/_global.scss */
-body {
-  background-image: url("../images/grid.png");
 }

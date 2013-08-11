@@ -1,39 +1,46 @@
 
 .proto-main-wrapper{
-    display:block;
-    float:left;
-    
+	min-width:100%;
+	min-height:100%;
 }
 
 .proto-sidder{
-    background:#005b9f;
-    color:white;
-    float:left;
-    height:100%;
-    padding:0px 20px 0px 50px;
-    
+	background:$prim-background;
+	color:white;
+	height:100%;
+	@include box-sizing(border-box);
+	width:$sider-width;
+	position:absolute;
+	@include box-shadow(darken($prim-background, 5%) 0 0 15px);
+
+		.proto-sidder-content{
+			padding-top:10px;
+			padding-left:10px;
+			@include box-sizing(border-box);
+			height:100%;
+			padding-bottom:$status-bar;
+			header{
+				h1{
+					padding-bottom:10px;
+					color:$prim-high;
+					font-size:35px;
+					font-weight:200;
+				}
+				hr{
+				border-width:1px 0px 0px 0px;
+				border-top-color:$sec-background;
+				}
+				
+					margin-bottom:20px;
+			}
+		}
+	footer{
+		margin-top:-$status-bar;
+		height: $status-bar;
+		width:100%;
+		background:$sec-background;
+	}
 }
 
-.proto-sidder-content{
-    padding-top:10px;
-}
 
-.proto-logo{
-    padding-bottom:10px;
-}
 
-.proto-line{
-    margin-bottom:10px;
-}
-
-.proto-main-content{
-    margin-left:50%;
-    margin-top:20px;
-    background:rgba(255,255,255,0.5);
-    border-style:solid;
-    border-color:#005b9f;
-    border-width:1px;
-    width:500px;
-    height:500px;
-    
-}
