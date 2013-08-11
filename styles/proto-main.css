@@ -1,0 +1,124 @@
+/* line 17, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/modules/_sider.scss */
+.proto-main-wrapper {
+  display: block;
+  float: left;
+}
+
+/* line 8, ../sass/modules/_sider.scss */
+.proto-sidder {
+  background: #005b9f;
+  color: white;
+  float: left;
+  height: 100%;
+  padding: 0px 20px 0px 50px;
+}
+
+/* line 17, ../sass/modules/_sider.scss */
+.proto-sidder-content {
+  padding-top: 10px;
+}
+
+/* line 21, ../sass/modules/_sider.scss */
+.proto-logo {
+  padding-bottom: 10px;
+}
+
+/* line 25, ../sass/modules/_sider.scss */
+.proto-line {
+  margin-bottom: 10px;
+}
+
+/* line 29, ../sass/modules/_sider.scss */
+.proto-main-content {
+  margin-left: 50%;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  border-color: #005b9f;
+  border-width: 1px;
+  width: 500px;
+  height: 500px;
+}
+
+/* line 1, ../sass/modules/_global.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../sass/modules/_global.scss */
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* line 12, ../sass/modules/_global.scss */
+body {
+  background-image: url("../images/grid.png");
+}
