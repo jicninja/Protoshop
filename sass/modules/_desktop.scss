@@ -1,0 +1,181 @@
+.proto-desktop{
+	width:1024px;
+	height:768px;
+	background: white;
+	border-style:solid;
+	border-width:1px;
+	border-color:$prim-blueprint;
+	header{
+		cursor:move;
+		font-family:'pt_sansbold_italic';
+		@include border-top-radius(8px);
+		position:relative;
+		top:-8px;
+		width:100%;
+		min-height:115px;
+		background: $prim-blueprint;
+		position:relative;
+		.proto-nav{
+			cursor:default;
+			position:absolute;
+			bottom:0;
+			@include box-sizing(border-box);
+			padding-left:30px;
+			width:100%;
+			min-height:70px;
+			background: $sec-blueprint;
+			
+			ul{
+			position:relative;
+			float:left;
+			bottom:24px;
+				li.tab{
+				@include inline-block;
+				margin-right:-5px;
+				cursor:pointer;
+					.start-tab{
+						display:block;
+						float:left;
+						width:11px;
+						height:24px;
+						background-image:url("../images/start-unfocus-tab.png");
+						background-repeat:no-repeat;
+					}
+					.content-tab{
+						line-height:24px;
+						position:relative;
+						padding-left:10px;
+						padding-right:30px;
+						display:block;
+						float:left;
+						color:$sec-blueprint;
+						background: darken($sec-blueprint,17%);
+						height:22px;
+						button{
+						&::-moz-focus-inner { border: 0; }
+							border-width:0px;
+							cursor:pointer;
+							@include border-radius(50%);
+							position:absolute;
+							background:none;
+							border:none;
+							right:-2px;
+							top:3px;
+							width:20px;
+							height:20px;
+							background-image:url("../images/close.png");
+							background-repeat:no-repeat;
+							background-position:center center;
+							&:hover{
+								background-image:url("../images/high-close.png");
+							}
+							&:active{
+							background-color:$prim-blueprint;
+								@include box-shadow(darken($prim-blueprint, 15%) 0px 0px 5px 0 inset);
+							}
+						}
+						
+					}
+					.end-tab{
+						display:block;
+						float:right;
+						width:13px;
+						height:24px;
+						background-image:url("../images/end-unfocus-tab.png");
+						background-repeat:no-repeat;
+					}
+				&.active{
+				cursor:default;
+					.start-tab{
+					background-image:url("../images/start-tab.png");
+					}
+					.content-tab{
+						height:24px;
+						color:$prim-blueprint;
+						background: $sec-blueprint;
+					}
+					.end-tab{
+					background-image:url("../images/end-tab.png");
+					}
+				}
+				&.add{
+				position:relative;
+				left:-2px;
+				button{
+				&::-moz-focus-inner { border: 0; }
+				cursor:pointer;
+				background:none;
+				border-width:0;
+				.start-tab{
+					display:block;
+					float:left;
+					width:9px;
+					height:20px;
+					background-image:url("../images/start-new-tab.png");
+				}
+				.content-tab{
+					padding-left:2px;
+					padding-right:2px;
+					@include box-sizing(border-box);
+					color:$sec-high;
+					line-height:20px;
+					position:relative;
+					display:block;
+					float:left;
+					background: $sec-blueprint;
+					height:20px;
+					.add-icon{
+						display:block;
+						float:left;
+						width:10px;
+						height:10px;
+						margin-right:5px;
+						position:relative;
+						top:5px;
+						background-image:url("../images/add.png");
+					}
+				}
+				.end-tab{
+					display:block;
+					float:right;
+					width:9px;
+					height:20px;
+					background-image:url("../images/end-new-tab.png");
+				}
+				}
+				&:hover{
+				.start-tab{
+					background-image:url("../images/start-new-hover-tab.png")
+				}
+				.content-tab{
+					background:$sec-high;
+					color:white;
+					.add-icon{
+						background-image:url("../images/add-hover.png");
+					}
+				}
+				.end-tab{
+					background-image:url("../images/end-new-hover-tab.png")
+				}
+				&:active{
+				.start-tab{
+					background-image:url("../images/start-new-active-tab.png")
+				}
+				.content-tab{
+					color:$sec-high;
+					background:white;
+					.add-icon{
+						background-image:url("../images/add.png");
+					}
+				}
+				.end-tab{
+					background-image:url("../images/end-new-active-tab.png")
+				}
+				}
+				}
+				}
+			}
+			}
+		}
+	}
+}

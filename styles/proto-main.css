@@ -63,6 +63,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@font-face {
+  font-family: 'pt_sansbold_italic';
+  src: url("fonts/PTS76F-webfont.eot");
+  src: url("fonts/PTS76F-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/PTS76F-webfont.woff") format("woff"), url("fonts/PTS76F-webfont.ttf") format("truetype"), url("fonts/PTS76F-webfont.svg#pt_sansbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 1, ../sass/modules/_global.scss */
 * {
   margin: 0px;
@@ -80,6 +88,7 @@ html, body {
 
 /* line 15, ../sass/modules/_global.scss */
 body {
+  background-color: #606d80;
   background-image: url("../images/grid.png");
 }
 
@@ -99,11 +108,12 @@ body {
   box-sizing: border-box;
   width: 250px;
   position: absolute;
-  -webkit-box-shadow: #121213 0 0 15px;
-  -moz-box-shadow: #121213 0 0 15px;
-  box-shadow: #121213 0 0 15px;
+  left: 0px;
+  -webkit-box-shadow: #121213 -10px -5px 10px 0 inset;
+  -moz-box-shadow: #121213 -10px -5px 10px 0 inset;
+  box-shadow: #121213 -10px -5px 10px 0 inset;
 }
-/* line 16, ../sass/modules/_sider.scss */
+/* line 17, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content {
   padding-top: 10px;
   padding-left: 10px;
@@ -113,23 +123,23 @@ body {
   height: 100%;
   padding-bottom: 30px;
 }
-/* line 22, ../sass/modules/_sider.scss */
+/* line 23, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content header {
   margin-bottom: 20px;
 }
-/* line 23, ../sass/modules/_sider.scss */
+/* line 24, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content header h1 {
   padding-bottom: 10px;
   color: #56dbbb;
   font-size: 35px;
   font-weight: 200;
 }
-/* line 29, ../sass/modules/_sider.scss */
+/* line 30, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content header hr {
   border-width: 1px 0px 0px 0px;
   border-top-color: #606d80;
 }
-/* line 37, ../sass/modules/_sider.scss */
+/* line 38, ../sass/modules/_sider.scss */
 .proto-sidder footer {
   margin-top: -30px;
   height: 30px;
@@ -145,13 +155,234 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 6, ../sass/modules/_content.scss */
-.proto-main-wrapper .proto-main-content {
-  margin-top: 0px;
-  background: rgba(255, 255, 255, 0.5);
+
+/* line 1, ../sass/modules/_desktop.scss */
+.proto-desktop {
+  width: 1024px;
+  height: 768px;
+  background: white;
   border-style: solid;
-  border-color: #005b9f;
   border-width: 1px;
-  width: 500px;
-  height: 500px;
+  border-color: #567ebb;
+}
+/* line 8, ../sass/modules/_desktop.scss */
+.proto-desktop header {
+  cursor: move;
+  font-family: 'pt_sansbold_italic';
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+  top: -8px;
+  width: 100%;
+  min-height: 115px;
+  background: #567ebb;
+  position: relative;
+}
+/* line 18, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav {
+  cursor: default;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+  width: 100%;
+  min-height: 70px;
+  background: #b8c9e3;
+}
+/* line 28, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul {
+  position: relative;
+  float: left;
+  bottom: 24px;
+}
+/* line 32, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-right: -5px;
+  cursor: pointer;
+}
+/* line 36, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .start-tab {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 24px;
+  background-image: url("../images/start-unfocus-tab.png");
+  background-repeat: no-repeat;
+}
+/* line 44, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .content-tab {
+  line-height: 24px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 30px;
+  display: block;
+  float: left;
+  color: #b8c9e3;
+  background: #7a9aca;
+  height: 22px;
+}
+/* line 54, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .content-tab button {
+  border-width: 0px;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: none;
+  border: none;
+  right: -2px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/close.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 55, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .content-tab button::-moz-focus-inner {
+  border: 0;
+}
+/* line 69, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .content-tab button:hover {
+  background-image: url("../images/high-close.png");
+}
+/* line 72, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .content-tab button:active {
+  background-color: #567ebb;
+  -webkit-box-shadow: #385a8c 0px 0px 5px 0 inset;
+  -moz-box-shadow: #385a8c 0px 0px 5px 0 inset;
+  box-shadow: #385a8c 0px 0px 5px 0 inset;
+}
+/* line 79, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab .end-tab {
+  display: block;
+  float: right;
+  width: 13px;
+  height: 24px;
+  background-image: url("../images/end-unfocus-tab.png");
+  background-repeat: no-repeat;
+}
+/* line 87, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.active {
+  cursor: default;
+}
+/* line 89, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.active .start-tab {
+  background-image: url("../images/start-tab.png");
+}
+/* line 92, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.active .content-tab {
+  height: 24px;
+  color: #567ebb;
+  background: #b8c9e3;
+}
+/* line 97, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.active .end-tab {
+  background-image: url("../images/end-tab.png");
+}
+/* line 101, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add {
+  position: relative;
+  left: -2px;
+}
+/* line 104, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add button {
+  cursor: pointer;
+  background: none;
+  border-width: 0;
+}
+/* line 105, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add button::-moz-focus-inner {
+  border: 0;
+}
+/* line 109, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add button .start-tab {
+  display: block;
+  float: left;
+  width: 9px;
+  height: 20px;
+  background-image: url("../images/start-new-tab.png");
+}
+/* line 116, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add button .content-tab {
+  padding-left: 2px;
+  padding-right: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ff0ba9;
+  line-height: 20px;
+  position: relative;
+  display: block;
+  float: left;
+  background: #b8c9e3;
+  height: 20px;
+}
+/* line 127, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add button .content-tab .add-icon {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+  background-image: url("../images/add.png");
+}
+/* line 138, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add button .end-tab {
+  display: block;
+  float: right;
+  width: 9px;
+  height: 20px;
+  background-image: url("../images/end-new-tab.png");
+}
+/* line 147, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover .start-tab {
+  background-image: url("../images/start-new-hover-tab.png");
+}
+/* line 150, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover .content-tab {
+  background: #ff0ba9;
+  color: white;
+}
+/* line 153, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover .content-tab .add-icon {
+  background-image: url("../images/add-hover.png");
+}
+/* line 157, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover .end-tab {
+  background-image: url("../images/end-new-hover-tab.png");
+}
+/* line 161, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover:active .start-tab {
+  background-image: url("../images/start-new-active-tab.png");
+}
+/* line 164, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover:active .content-tab {
+  color: #ff0ba9;
+  background: white;
+}
+/* line 167, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover:active .content-tab .add-icon {
+  background-image: url("../images/add.png");
+}
+/* line 171, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-nav ul li.tab.add:hover:active .end-tab {
+  background-image: url("../images/end-new-active-tab.png");
 }
