@@ -24,11 +24,12 @@
 			width:100%;
 			min-height:70px;
 			background: $sec-blueprint;
-			
+			@include text-shadow(1px 1px 0px rgba($prim-blueprint,0.5));
+
 			ul{
-			position:relative;
+			position:absolute;
 			float:left;
-			bottom:24px;
+			top:-24px;
 				li.tab{
 				@include inline-block;
 				margin-right:-5px;
@@ -93,6 +94,7 @@
 						height:24px;
 						color:$prim-blueprint;
 						background: $sec-blueprint;
+						@include text-shadow(1px 1px 0px rgba(white,0.5));
 					}
 					.end-tab{
 					background-image:url("../images/end-tab.png");
@@ -100,8 +102,11 @@
 				}
 				&.add{
 				position:relative;
-				left:-2px;
+				left:-0px;
 				button{
+				font-family:'pt_sansbold_italic';
+				font-size:14px;
+				@include text-shadow(1px 1px 0px rgba(255,255,255,0.5));
 				&::-moz-focus-inner { border: 0; }
 				cursor:pointer;
 				background:none;
@@ -150,6 +155,7 @@
 				.content-tab{
 					background:$sec-high;
 					color:white;
+					@include text-shadow(1px 1px 0px rgba($sec-high,0.5));
 					.add-icon{
 						background-image:url("../images/add-hover.png");
 					}
@@ -162,6 +168,7 @@
 					background-image:url("../images/start-new-active-tab.png")
 				}
 				.content-tab{
+					@include text-shadow(1px 1px 0px rgba(white,0.5));
 					color:$sec-high;
 					background:white;
 					.add-icon{
@@ -176,6 +183,102 @@
 				}
 			}
 			}
+		}
+		.proto-search{
+			padding-top:20px;
+			button.undo{
+				&::-moz-focus-inner { border: 0; }
+				position:relative;
+				z-index:2;
+				bottom:6px;	
+				float:left; 
+				width:40px;
+				height:40px;
+				background-color:white;
+				@include border-radius(50%);
+				@include box-sizing(border-box);
+				border: 2px solid darken($prim-blueprint,10%);
+				span{
+					display:block;
+					float:left;
+					width:24px;
+					height:16px;
+					position:relative;
+					left:5px;
+					background-image:url("../images/undo.png");
+				}
+			}
+			.search-box{
+				position:relative;
+				float:left; 	
+				z-index:0;
+				height:27px;
+				min-width:88%;
+				left:-10px;
+				background-color:lighten($sec-blueprint,15%);
+				@include border-radius(5px);
+				@include box-sizing(border-box);
+				border: 1px solid $prim-blueprint;
+				button{
+				&::-moz-focus-inner { border: 0; }
+					@include box-sizing(border-box);
+					position:relative;
+					bottom:-1px;
+					display:block;
+					float:left;
+					width:35px;
+					height:23px;
+					background:lighten($sec-blueprint,20%);
+					border:0px none;
+					border-right: 1px solid darken($prim-blueprint,10%);
+					span{
+						position:relative;
+						right: -12px;
+						display:block;
+						float:left;
+						background-image:url("../images/redone.png");
+						width:14px;
+						height:11px;
+					}
+				}
+			}
+			button{
+				width:26px;
+				height:26px;
+				display:block;
+				float:left;
+				background:none;
+				border: 0px none;
+				@include border-radius(5px);
+					&:hover{
+						background: lighten($sec-blueprint,10%);
+					}
+					&:active{
+						@include box-shadow(darken($prim-blueprint, 15%) 0px 0px 5px 0 inset);
+					}
+			
+			&.display-row{
+				span{
+					margin-left:6px;
+					width:14px;
+					height:17px;
+					display:block;
+					float:left;
+					background-image:url("../images/columnas.png");
+				}
+			}
+			&.display-config{
+				margin-left:5px;
+				span{
+					margin-left:4px;
+					width:18px;
+					height:18px;
+					display:block;
+					float:left;
+					background-image:url("../images/config.png");
+				}
+			}
+		}
 		}
 	}
 }

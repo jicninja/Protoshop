@@ -1,4 +1,4 @@
-/* line 17, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -194,14 +194,15 @@ body {
   width: 100%;
   min-height: 70px;
   background: #b8c9e3;
+  text-shadow: 1px 1px 0px rgba(86, 126, 187, 0.5);
 }
-/* line 28, ../sass/modules/_desktop.scss */
+/* line 29, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul {
-  position: relative;
+  position: absolute;
   float: left;
-  bottom: 24px;
+  top: -24px;
 }
-/* line 32, ../sass/modules/_desktop.scss */
+/* line 33, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab {
   display: -moz-inline-stack;
   display: inline-block;
@@ -212,7 +213,7 @@ body {
   margin-right: -5px;
   cursor: pointer;
 }
-/* line 36, ../sass/modules/_desktop.scss */
+/* line 37, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .start-tab {
   display: block;
   float: left;
@@ -221,7 +222,7 @@ body {
   background-image: url("../images/start-unfocus-tab.png");
   background-repeat: no-repeat;
 }
-/* line 44, ../sass/modules/_desktop.scss */
+/* line 45, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .content-tab {
   line-height: 24px;
   position: relative;
@@ -233,7 +234,7 @@ body {
   background: #7a9aca;
   height: 22px;
 }
-/* line 54, ../sass/modules/_desktop.scss */
+/* line 55, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .content-tab button {
   border-width: 0px;
   cursor: pointer;
@@ -253,22 +254,22 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 55, ../sass/modules/_desktop.scss */
+/* line 56, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .content-tab button::-moz-focus-inner {
   border: 0;
 }
-/* line 69, ../sass/modules/_desktop.scss */
+/* line 70, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .content-tab button:hover {
   background-image: url("../images/high-close.png");
 }
-/* line 72, ../sass/modules/_desktop.scss */
+/* line 73, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .content-tab button:active {
   background-color: #567ebb;
   -webkit-box-shadow: #385a8c 0px 0px 5px 0 inset;
   -moz-box-shadow: #385a8c 0px 0px 5px 0 inset;
   box-shadow: #385a8c 0px 0px 5px 0 inset;
 }
-/* line 79, ../sass/modules/_desktop.scss */
+/* line 80, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .end-tab {
   display: block;
   float: right;
@@ -277,40 +278,44 @@ body {
   background-image: url("../images/end-unfocus-tab.png");
   background-repeat: no-repeat;
 }
-/* line 87, ../sass/modules/_desktop.scss */
+/* line 88, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.active {
   cursor: default;
 }
-/* line 89, ../sass/modules/_desktop.scss */
+/* line 90, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.active .start-tab {
   background-image: url("../images/start-tab.png");
 }
-/* line 92, ../sass/modules/_desktop.scss */
+/* line 93, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.active .content-tab {
   height: 24px;
   color: #567ebb;
   background: #b8c9e3;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
-/* line 97, ../sass/modules/_desktop.scss */
+/* line 99, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.active .end-tab {
   background-image: url("../images/end-tab.png");
 }
-/* line 101, ../sass/modules/_desktop.scss */
+/* line 103, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add {
   position: relative;
-  left: -2px;
+  left: -0px;
 }
-/* line 104, ../sass/modules/_desktop.scss */
+/* line 106, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add button {
+  font-family: 'pt_sansbold_italic';
+  font-size: 14px;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
   cursor: pointer;
   background: none;
   border-width: 0;
 }
-/* line 105, ../sass/modules/_desktop.scss */
+/* line 110, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add button::-moz-focus-inner {
   border: 0;
 }
-/* line 109, ../sass/modules/_desktop.scss */
+/* line 114, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add button .start-tab {
   display: block;
   float: left;
@@ -318,7 +323,7 @@ body {
   height: 20px;
   background-image: url("../images/start-new-tab.png");
 }
-/* line 116, ../sass/modules/_desktop.scss */
+/* line 121, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add button .content-tab {
   padding-left: 2px;
   padding-right: 2px;
@@ -333,7 +338,7 @@ body {
   background: #b8c9e3;
   height: 20px;
 }
-/* line 127, ../sass/modules/_desktop.scss */
+/* line 132, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add button .content-tab .add-icon {
   display: block;
   float: left;
@@ -344,7 +349,7 @@ body {
   top: 5px;
   background-image: url("../images/add.png");
 }
-/* line 138, ../sass/modules/_desktop.scss */
+/* line 143, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add button .end-tab {
   display: block;
   float: right;
@@ -352,37 +357,170 @@ body {
   height: 20px;
   background-image: url("../images/end-new-tab.png");
 }
-/* line 147, ../sass/modules/_desktop.scss */
+/* line 152, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover .start-tab {
   background-image: url("../images/start-new-hover-tab.png");
 }
-/* line 150, ../sass/modules/_desktop.scss */
+/* line 155, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover .content-tab {
   background: #ff0ba9;
   color: white;
+  text-shadow: 1px 1px 0px rgba(255, 11, 169, 0.5);
 }
-/* line 153, ../sass/modules/_desktop.scss */
+/* line 159, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover .content-tab .add-icon {
   background-image: url("../images/add-hover.png");
 }
-/* line 157, ../sass/modules/_desktop.scss */
+/* line 163, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover .end-tab {
   background-image: url("../images/end-new-hover-tab.png");
 }
-/* line 161, ../sass/modules/_desktop.scss */
+/* line 167, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover:active .start-tab {
   background-image: url("../images/start-new-active-tab.png");
 }
-/* line 164, ../sass/modules/_desktop.scss */
+/* line 170, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover:active .content-tab {
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
   color: #ff0ba9;
   background: white;
 }
-/* line 167, ../sass/modules/_desktop.scss */
+/* line 174, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover:active .content-tab .add-icon {
   background-image: url("../images/add.png");
 }
-/* line 171, ../sass/modules/_desktop.scss */
+/* line 178, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.add:hover:active .end-tab {
   background-image: url("../images/end-new-active-tab.png");
+}
+/* line 187, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search {
+  padding-top: 20px;
+}
+/* line 189, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button.undo {
+  position: relative;
+  z-index: 2;
+  bottom: 6px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #40659e;
+}
+/* line 190, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button.undo::-moz-focus-inner {
+  border: 0;
+}
+/* line 201, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button.undo span {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 16px;
+  position: relative;
+  left: 5px;
+  background-image: url("../images/undo.png");
+}
+/* line 211, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search .search-box {
+  position: relative;
+  float: left;
+  z-index: 0;
+  height: 27px;
+  min-width: 88%;
+  left: -10px;
+  background-color: #eff3f8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #567ebb;
+}
+/* line 222, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search .search-box button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  bottom: -1px;
+  display: block;
+  float: left;
+  width: 35px;
+  height: 23px;
+  background: white;
+  border: 0px none;
+  border-right: 1px solid #40659e;
+}
+/* line 223, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search .search-box button::-moz-focus-inner {
+  border: 0;
+}
+/* line 234, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search .search-box button span {
+  position: relative;
+  right: -12px;
+  display: block;
+  float: left;
+  background-image: url("../images/redone.png");
+  width: 14px;
+  height: 11px;
+}
+/* line 245, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button {
+  width: 26px;
+  height: 26px;
+  display: block;
+  float: left;
+  background: none;
+  border: 0px none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 253, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button:hover {
+  background: #dde5f1;
+}
+/* line 256, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button:active {
+  -webkit-box-shadow: #385a8c 0px 0px 5px 0 inset;
+  -moz-box-shadow: #385a8c 0px 0px 5px 0 inset;
+  box-shadow: #385a8c 0px 0px 5px 0 inset;
+}
+/* line 261, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button.display-row span {
+  margin-left: 6px;
+  width: 14px;
+  height: 17px;
+  display: block;
+  float: left;
+  background-image: url("../images/columnas.png");
+}
+/* line 270, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button.display-config {
+  margin-left: 5px;
+}
+/* line 272, ../sass/modules/_desktop.scss */
+.proto-desktop header .proto-search button.display-config span {
+  margin-left: 4px;
+  width: 18px;
+  height: 18px;
+  display: block;
+  float: left;
+  background-image: url("../images/config.png");
 }
