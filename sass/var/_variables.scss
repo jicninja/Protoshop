@@ -3,8 +3,9 @@ $sec-background: #606d80;
 $prim-high: #56dbbb;
 $sec-high: #ff0ba9;
 
-$prim-blueprint: #567ebb;
-$sec-blueprint: lighten(#567ebb,27%);
+//$prim-blueprint: #567ebb;
+$prim-blueprint:#56dbbb;
+$sec-blueprint: lighten($prim-blueprint,27%);
 
 $sider-width: 250px;
 $slider-pos: 0px;

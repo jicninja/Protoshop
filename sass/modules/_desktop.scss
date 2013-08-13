@@ -1,16 +1,22 @@
 .proto-desktop{
-	width:1024px;
-	height:768px;
-	background: white;
+	
 	border-style:solid;
 	border-width:1px;
 	border-color:$prim-blueprint;
+	width:800px;
+	height:600px;
+	background: white;
+	@include box-sizing(border-box);
 	header{
 		cursor:move;
 		font-family:'pt_sansbold_italic';
 		@include border-top-radius(8px);
+		border-left: 1px solid $prim-blueprint;
+		border-top: 1px solid $prim-blueprint;
+		border-right: 1px solid $prim-blueprint;
 		position:relative;
 		top:-8px;
+		left:-1px;
 		width:100%;
 		min-height:115px;
 		background: $prim-blueprint;
@@ -46,10 +52,10 @@
 						line-height:24px;
 						position:relative;
 						padding-left:10px;
-						padding-right:30px;
+						padding-right:20px;
 						display:block;
 						float:left;
-						color:$sec-blueprint;
+						color:lighten($sec-blueprint,5%);
 						background: darken($sec-blueprint,17%);
 						height:22px;
 						button{
@@ -61,7 +67,7 @@
 							background:none;
 							border:none;
 							right:-2px;
-							top:3px;
+							top:2px;
 							width:20px;
 							height:20px;
 							background-image:url("../images/close.png");
@@ -92,7 +98,7 @@
 					}
 					.content-tab{
 						height:24px;
-						color:$prim-blueprint;
+						color:darken($prim-blueprint,10%);
 						background: $sec-blueprint;
 						@include text-shadow(1px 1px 0px rgba(white,0.5));
 					}
@@ -213,7 +219,7 @@
 				float:left; 	
 				z-index:0;
 				height:27px;
-				min-width:88%;
+				min-width:85%;
 				left:-10px;
 				background-color:lighten($sec-blueprint,15%);
 				@include border-radius(5px);
@@ -251,7 +257,7 @@
 				border: 0px none;
 				@include border-radius(5px);
 					&:hover{
-						background: lighten($sec-blueprint,10%);
+						background: lighten($sec-blueprint,5%);
 					}
 					&:active{
 						@include box-shadow(darken($prim-blueprint, 15%) 0px 0px 5px 0 inset);
