@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -86,12 +86,6 @@ html, body {
   font-family: helvetica, arial, sans-serif;
 }
 
-/* line 15, ../sass/modules/_global.scss */
-body {
-  background-color: #606d80;
-  background-image: url("../images/grid.png");
-}
-
 /* line 2, ../sass/modules/_sider.scss */
 .proto-main-wrapper {
   min-width: 100%;
@@ -100,7 +94,6 @@ body {
 
 /* line 7, ../sass/modules/_sider.scss */
 .proto-sidder {
-  background: #1f1f20;
   color: white;
   height: 100%;
   -webkit-box-sizing: border-box;
@@ -109,11 +102,11 @@ body {
   width: 250px;
   position: absolute;
   left: 0px;
-  -webkit-box-shadow: #121213 -10px -5px 10px 0 inset;
-  -moz-box-shadow: #121213 -10px -5px 10px 0 inset;
-  box-shadow: #121213 -10px -5px 10px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px -5px 10px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px -5px 10px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -5px 10px 0 inset;
 }
-/* line 17, ../sass/modules/_sider.scss */
+/* line 16, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content {
   padding-top: 10px;
   padding-left: 10px;
@@ -123,23 +116,31 @@ body {
   height: 100%;
   padding-bottom: 30px;
 }
-/* line 23, ../sass/modules/_sider.scss */
+/* line 22, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content header {
   margin-bottom: 20px;
 }
-/* line 24, ../sass/modules/_sider.scss */
+/* line 23, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content header h1 {
-  padding-bottom: 10px;
-  color: #56dbbb;
-  font-size: 35px;
-  font-weight: 200;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+  color: #1cbabc;
+  width: 200px;
+  height: 40px;
+  background-image: url("../images/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  font-weight: lighter;
 }
-/* line 30, ../sass/modules/_sider.scss */
+/* line 36, ../sass/modules/_sider.scss */
 .proto-sidder .proto-sidder-content header hr {
-  border-width: 1px 0px 0px 0px;
-  border-top-color: #606d80;
+  border-width: 0px 0px 0px 0px;
+  height: 1px;
+  background-image: url("../images/hr.jpg");
 }
-/* line 38, ../sass/modules/_sider.scss */
+/* line 45, ../sass/modules/_sider.scss */
 .proto-sidder footer {
   margin-top: -30px;
   height: 30px;
@@ -160,7 +161,7 @@ body {
 .proto-desktop {
   border-style: solid;
   border-width: 1px;
-  border-color: #56dbbb;
+  border-color: #1cbabc;
   width: 800px;
   height: 600px;
   background: white;
@@ -178,15 +179,15 @@ body {
   -moz-border-radius-topright: 8px;
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
-  border-left: 1px solid #56dbbb;
-  border-top: 1px solid #56dbbb;
-  border-right: 1px solid #56dbbb;
+  border-left: 1px solid #1cbabc;
+  border-top: 1px solid #1cbabc;
+  border-right: 1px solid #1cbabc;
   position: relative;
   top: -8px;
   left: -1px;
   width: 100%;
   min-height: 115px;
-  background: #56dbbb;
+  background: #1cbabc;
   position: relative;
 }
 /* line 24, ../sass/modules/_desktop.scss */
@@ -200,8 +201,8 @@ body {
   padding-left: 30px;
   width: 100%;
   min-height: 70px;
-  background: #c8f3e9;
-  text-shadow: 1px 1px 0px rgba(86, 219, 187, 0.5);
+  background: #a9ebec;
+  text-shadow: 1px 1px 0px rgba(28, 186, 188, 0.5);
 }
 /* line 35, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul {
@@ -237,8 +238,8 @@ body {
   padding-right: 20px;
   display: block;
   float: left;
-  color: #ddf8f1;
-  background: #80e4cc;
+  color: #d0f7f8;
+  background: #1f8e90;
   height: 22px;
 }
 /* line 61, ../sass/modules/_desktop.scss */
@@ -271,10 +272,10 @@ body {
 }
 /* line 79, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .content-tab button:active {
-  background-color: #56dbbb;
-  -webkit-box-shadow: #28bc99 0px 0px 5px 0 inset;
-  -moz-box-shadow: #28bc99 0px 0px 5px 0 inset;
-  box-shadow: #28bc99 0px 0px 5px 0 inset;
+  background-color: #1cbabc;
+  -webkit-box-shadow: #127879 0px 0px 5px 0 inset;
+  -moz-box-shadow: #127879 0px 0px 5px 0 inset;
+  box-shadow: #127879 0px 0px 5px 0 inset;
 }
 /* line 86, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab .end-tab {
@@ -296,8 +297,8 @@ body {
 /* line 99, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-nav ul li.tab.active .content-tab {
   height: 24px;
-  color: #2dd1aa;
-  background: #c8f3e9;
+  color: #158e90;
+  background: #a9ebec;
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
 /* line 105, ../sass/modules/_desktop.scss */
@@ -342,7 +343,7 @@ body {
   position: relative;
   display: block;
   float: left;
-  background: #c8f3e9;
+  background: #77e9eb;
   height: 20px;
 }
 /* line 138, ../sass/modules/_desktop.scss */
@@ -421,7 +422,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 2px solid #2dd1aa;
+  border: 2px solid #158e90;
 }
 /* line 196, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-search button.undo::-moz-focus-inner {
@@ -445,7 +446,7 @@ body {
   height: 27px;
   min-width: 85%;
   left: -10px;
-  background-color: white;
+  background-color: #e6fbfb;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -454,7 +455,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid #56dbbb;
+  border: 1px solid #1cbabc;
 }
 /* line 228, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-search .search-box button {
@@ -467,9 +468,9 @@ body {
   float: left;
   width: 35px;
   height: 23px;
-  background: white;
+  background: #d0f7f8;
   border: 0px none;
-  border-right: 1px solid #2dd1aa;
+  border-right: 1px solid #158e90;
 }
 /* line 229, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-search .search-box button::-moz-focus-inner {
@@ -501,13 +502,13 @@ body {
 }
 /* line 259, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-search button:hover {
-  background: #ddf8f1;
+  background: #8dedee;
 }
 /* line 262, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-search button:active {
-  -webkit-box-shadow: #28bc99 0px 0px 5px 0 inset;
-  -moz-box-shadow: #28bc99 0px 0px 5px 0 inset;
-  box-shadow: #28bc99 0px 0px 5px 0 inset;
+  -webkit-box-shadow: #127879 0px 0px 5px 0 inset;
+  -moz-box-shadow: #127879 0px 0px 5px 0 inset;
+  box-shadow: #127879 0px 0px 5px 0 inset;
 }
 /* line 267, ../sass/modules/_desktop.scss */
 .proto-desktop header .proto-search button.display-row span {

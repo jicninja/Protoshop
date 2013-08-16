@@ -29,7 +29,7 @@
 			padding-left:30px;
 			width:100%;
 			min-height:70px;
-			background: $sec-blueprint;
+			background: desaturate(lighten($sec-blueprint,10%),10%);
 			@include text-shadow(1px 1px 0px rgba($prim-blueprint,0.5));
 
 			ul{
@@ -55,8 +55,8 @@
 						padding-right:20px;
 						display:block;
 						float:left;
-						color:lighten($sec-blueprint,5%);
-						background: darken($sec-blueprint,17%);
+						color:lighten($sec-blueprint,20%);
+						background: darken(desaturate(lighten($sec-blueprint,10%),10%),45%);
 						height:22px;
 						button{
 						&::-moz-focus-inner { border: 0; }
@@ -99,7 +99,7 @@
 					.content-tab{
 						height:24px;
 						color:darken($prim-blueprint,10%);
-						background: $sec-blueprint;
+						background: desaturate(lighten($sec-blueprint,10%),10%);
 						@include text-shadow(1px 1px 0px rgba(white,0.5));
 					}
 					.end-tab{
@@ -221,7 +221,7 @@
 				height:27px;
 				min-width:85%;
 				left:-10px;
-				background-color:lighten($sec-blueprint,15%);
+				background-color:lighten($sec-blueprint,25%);
 				@include border-radius(5px);
 				@include box-sizing(border-box);
 				border: 1px solid $prim-blueprint;

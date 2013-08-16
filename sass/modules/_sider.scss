@@ -5,14 +5,13 @@
 }
 
 .proto-sidder{
-	background:$prim-background;
 	color:white;
 	height:100%;
 	@include box-sizing(border-box);
 	width:$sider-width;
 	position:absolute;
 	left:$slider-pos;
-	@include box-shadow(darken($prim-background, 5%) -10px -5px 10px 0 inset);
+	@include box-shadow(rgba(darken(black, 5%),0.2) 0px -5px 10px 0 inset);
 
 		.proto-sidder-content{
 			padding-top:10px;
@@ -22,14 +21,22 @@
 			padding-bottom:$status-bar;
 			header{
 				h1{
-					padding-bottom:10px;
+					margin-bottom:30px;
+					margin-top:40px;
+					margin-left:20px;
 					color:$prim-high;
-					font-size:35px;
-					font-weight:200;
+					width:200px;
+					height:40px;
+					background-image: url('../images/logo.png');
+					background-position:center center;
+					background-repeat:no-repeat;
+					font-size:0px;
+					font-weight:lighter;
 				}
 				hr{
-				border-width:1px 0px 0px 0px;
-				border-top-color:$sec-background;
+				border-width:0px 0px 0px 0px;
+				height:1px;
+				background-image:url('../images/hr.jpg');
 				}
 				
 					margin-bottom:20px;
